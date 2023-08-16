@@ -14,4 +14,11 @@ namespace Exercises\Palindrome;
  */
 final class Palindrome
 {
+    public static function check(string $string):bool {
+        $stringRevers= strrev($string);
+        if( strcmp($string,$stringRevers) === 0)
+            return true;
+        return false;
+
+    }
 }
