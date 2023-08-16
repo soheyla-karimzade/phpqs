@@ -14,4 +14,19 @@ namespace Exercises\Pyramid;
  */
 final class Pyramid
 {
+
+    public static function print(int $rows):void{
+
+        for ($i = 0; $i < $rows; $i++)
+        {
+            for($j = 0; $j <= ($i!=0)?($j < $i+($i+1)):($j <= $i); $j++ )
+            {
+                echo "#";
+            }
+                echo ' ';
+        }
+    }
 }
+
+
+
